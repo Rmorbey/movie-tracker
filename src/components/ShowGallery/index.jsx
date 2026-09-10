@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {GalleryImage} from '../';
 import { Link } from 'react-router-dom';
+import { useShowImage } from '../../contexts/ShowImageProvider';
 
 export default function ShowGallery() {
-  const [shows, setShows] = useState([]);
+  const {shows, setShows } = useShowImage()
 
   useEffect(() => {
     async function displayShows() {
