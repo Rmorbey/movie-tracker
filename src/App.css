@@ -1,7 +1,7 @@
 * {
-  --background: #FFF7E9;
-  --text: #1746A2;
-  --accent: #FF731D;
+  --background: #0E3FA9;
+  --text: #FFA903;
+  --accent: #FFF;
   box-sizing: border-box;
 }
 
@@ -30,12 +30,31 @@ b, em {
   color: var(--accent);
 }
 
-nav > a {
-  margin-right: 0.5rem;
+a {
+  text-decoration: none;
   color: var(--text);
 }
 
-header, footer, main {
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(73, 79, 82);
+    color: white;
+}
+.nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav-links a {
+    color: white;
+}
+
+footer, main {
   padding: 1rem;
 }
 
