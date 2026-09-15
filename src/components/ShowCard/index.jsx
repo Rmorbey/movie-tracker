@@ -7,10 +7,10 @@ export default function ShowCard ({ show }) {
                 <img src={show.image.medium}></img>
             </div>
             <div>
-                {show.rating.average ? <span> ({ show.rating.average }/10)</span> : ""}
+                {show.rating.average ? <span role="figure"> ({ show.rating.average }/10)</span> : ""}
                 <h2>{show.name}</h2>
-                <em>{show.language}, {show.premiered}</em>
-                <div dangerouslySetInnerHTML={{ __html: show.summary }}></div>
+                <em role="figure-2">{show.language}, {show.premiered}</em>
+                <div role="figure-3" dangerouslySetInnerHTML={{ __html: show.summary }}></div>
             </div>
         </div>
     )

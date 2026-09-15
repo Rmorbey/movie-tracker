@@ -17,7 +17,7 @@ export default function SearchForm({lastSearch, handleSearch}) {
 
   return (
       <>
-          <form onSubmit={handleSubmit}>
+          <form role="figure" onSubmit={handleSubmit}>
               <input
                   type="text"
                   onChange={handleInput}
