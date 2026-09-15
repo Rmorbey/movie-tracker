@@ -8,8 +8,6 @@ let j = 0
 let ratCol = '#FFF'
 let langCol = '#FFF'
 
-
-
 //const cols = ["red", "blue", "green", "yellow", "grey", "white", "black"]
 
 export default function ShowList() {
